@@ -1,0 +1,81 @@
+/*--Contact section component styles*/
+.main-parent {
+  text-align: center;
+  background-color: #fff;
+  color: #2C3E50;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20%;
+}
+
+
+.sub-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-parent h2 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.sub-parent h2::before {
+  content: "";
+  position: absolute;
+  background-color: #2C3E50;
+  width: 65%;
+  height: 6px;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the element horizontally */
+  bottom: -20px ;
+}
+
+.sub-parent h2::after {
+  content : "";
+  position: absolute;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -42px;
+}
+
+.sub-parent h2 i {
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  z-index: 1;
+}
+
+.my-contact {
+  display: flex;
+  flex-direction: column;
+  width: 200%;
+  margin: 15% 0;
+}
+
+.my-contact button {
+  align-self: flex-start;
+  padding: 10px;
+  border:none;
+  border-radius: 4px;
+  background-color: #1ABC9C;
+  color: #fff;
+  cursor: pointer;
+}
+
+.my-contact input {
+  margin: 3% 0;
+  height: 3rem;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+}
